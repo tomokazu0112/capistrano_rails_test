@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: nginx_puma_mysql_production
-  username: nginx_puma_mysql
-  password: <%= ENV['NGINX_PUMA_MYSQL_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['CAPISTRANO_MYSQL_PASSWORD'] %>

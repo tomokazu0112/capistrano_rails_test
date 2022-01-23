@@ -3,6 +3,7 @@ lock "~> 3.16.0"
 
 set :application, "nginx_puma_mysql"
 set :repo_url, "git@github.com:tomokazu0112/capistrano_rails_test.git"
+set :branch, "main"
 set :user, "deploy"
 set :rbenv_type, :user
 set :rbenv_ruby, File.read(".ruby-version").strip

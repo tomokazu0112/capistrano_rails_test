@@ -50,4 +50,4 @@ production:
   <<: *default
   database: nginx_puma_mysql_production
   username: root
-  password: <%= ENV['CAPISTRANO_MYSQL_PASSWORD'] %>
+  password: <%= Rails.application.credentials.mysql[:production_password] %>
